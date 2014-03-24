@@ -25,3 +25,23 @@ Route::get('/portfolio', function()
 {
     return "This is my portfolio.";
 });
+
+Route::get('/sayhello/{name}', function($name)
+{
+	$data = array(
+		'name1' => $name
+	);
+
+	return View::make('my-first-view')->with($data);
+});
+
+Route::get('/roll-dice/{guess}', function($guess)
+{
+	$rand = rand(1, 6);
+	$data = [
+		'guess' => $guess,
+		'rand' => $rand
+	];
+	return View::make('roll-dice')->with($data);
+});
+
