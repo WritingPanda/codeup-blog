@@ -1,0 +1,14 @@
+i {
+	font-size: 2em;
+}
+
+.container-fluid {
+	width: 75%;
+}
+
+footer {
+	position: relative;
+	margin: 10px;
+	clear:both;
+	padding:20px;
+}
