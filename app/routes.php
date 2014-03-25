@@ -26,13 +26,5 @@ Route::get('/portfolio', 'HomeController@showPortfolio');
 // 	return View::make('my-first-view')->with($data);
 // });
 
-// Route::get('/roll-dice/{guess}', function($guess)
-// {
-// 	$rand = rand(1, 6);
-// 	$data = [
-// 		'guess' => $guess,
-// 		'rand' => $rand
-// 	];
-// 	return View::make('roll-dice')->with($data);
-// });
+Route::get('/roll-dice/{guess}', 'HomeController@showDice');
 

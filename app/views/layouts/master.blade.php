@@ -6,7 +6,9 @@
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/site.css">
 	<title>Written by a Panda</title>
+
 	@yield('topscript')
+
 </head>
 <body>
 	<div class="container">
@@ -30,7 +32,6 @@
 	    
 	    @yield('content')
 
-		
 		<footer class="footer">
 			<div class="row clear-top">
 				<div class="col-lg-12">
@@ -39,6 +40,7 @@
 			</div>
 		</footer>
 	</div>
+	
     <script src="/js/jquery-1.11.0.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 

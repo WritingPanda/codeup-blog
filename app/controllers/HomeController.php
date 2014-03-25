@@ -30,4 +30,13 @@ class HomeController extends BaseController {
 		return View::make('portfolio');
 	}
 
+	public function showDice($guess)
+	{
+		$rand = mt_rand(1, 6);
+		$data = [
+			'guess' => $guess,
+			'rand' => $rand
+		];
+		return View::make('roll-dice')->with($data);
+	}
 }
