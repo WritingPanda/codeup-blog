@@ -17,12 +17,12 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 		    	</button>
-		    	<a class="navbar-brand" href="/">Written by a Panda</a>
+		    	<a class="navbar-brand" href="{{{ action('HomeController@showIndex') }}}">Written by a Panda</a>
 		    </div>
 		    <div class="navbar-collapse collapse navbar-responsive-collapse">
 		    	<ul class="nav navbar-nav">
-		    		<li><a href="/portfolio">Portfolio</a></li>
-		        	<li><a href="/resume">Resume</a></li>
+		    		<li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
+		        	<li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
 		        	<li><a href="#">Blog</a></li>
 				</ul>
 		    </div>

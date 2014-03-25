@@ -8,12 +8,12 @@
 	</div>
 <div class="row, panel panel-body">
 	<div class="col-md-3">
-	<p class="text-center">
+	<p class="text-center resume">
 		Contact
 	</p>
 	</div>
 	<div class="col-md-7">
-		<p>
+		<p class="resume">
 			Omar Leonardo Quimbaya 齐漠
 		<br>
 		<a href="mailto:omar.quimbaya4@gmail.com?Subject=Hello%20Omar!" target="_top">omar.quimbaya4@gmail.com</a>
@@ -26,12 +26,12 @@
 </div>
 <div class="row, panel panel-body">
 	<div class="col-md-3">
-		<p class="text-center">
+		<p class="text-center resume">
 			Work Experience
 		</p>
 	</div>
 	<div class="col-md-7">
-		<p>
+		<p class="resume">
 			Lab Associate
 			<br>
 			<a href="http://www.codeup.com" target="_blank">Codeup</a>
@@ -39,7 +39,7 @@
 		<hr>
 	</div>
 	<div class="col-md-2">
-		<p class="text-center">
+		<p class="text-center resume">
 			JAN 2014 -
 			<br>
 			<span class="badge">PRESENT</span>
@@ -48,14 +48,14 @@
 	</div>
 	<div class="col-md-3"></div>
 	<div class="col-md-7">
-		<p>
+		<p class="resume">
 			Social Media Consultant<br>
 			<a href="http://www.writtenbyapanda.com" target="_blank">Written by a Panda</a>
 		</p>
 		<hr>
 	</div>
 	<div class="col-md-2">
-		<p class="text-center">
+		<p class="text-center resume">
 			NOV 2013 -
 			<br>
 			JAN 2014
@@ -64,7 +64,7 @@
 	</div>
 	<div class="col-md-3"></div>
 	<div class="col-md-7">
-		<p>
+		<p class="resume">
 			Community Manager
 			<br>
 			<a href="http://www.geekdom.com" target="_blank">Geekdom</a>
@@ -72,7 +72,7 @@
 		<hr>
 	</div>
 	<div class="col-md-2">
-		<p class="text-center">
+		<p class="text-center resume">
 			SEPT 2013 -
 			<br>
 			NOV 2013
@@ -81,7 +81,7 @@
 	</div>
 	<div class="col-md-3"></div>
 	<div class="col-md-7">
-		<p>
+		<p class="resume">
 			Director of PR and Social Media
 			<br>
 			<a href="http://www.parlevelsystems.com" target="_blank">ParLevel Systems</a>
@@ -89,7 +89,7 @@
 		<hr>
 	</div>
 	<div class="col-md-2">
-		<p class="text-center">
+		<p class="text-center resume">
 			MAR 2013 -
 			<br>
 			SEPT 2013
@@ -98,7 +98,7 @@
 	</div>
 	<div class="col-md-3"></div>
 	<div class="col-md-7">
-		<p>
+		<p class="resume">
 			Specialist
 			<br>
 			<a href="http://www.apple.com/retail/northstar/" target="_blank">Apple</a>
@@ -106,7 +106,7 @@
 		<hr>
 	</div>
 	<div class="col-md-2">
-		<p class="text-center">
+		<p class="text-center resume">
 			MAY 2012 - 
 			<br>
 			JAN 2013
@@ -115,14 +115,14 @@
 	</div>
 	<div class="col-md-3"></div>
 	<div class="col-md-7">
-		<p>
+		<p class="resume">
 			English Teacher/Foreign Consultant
 			<br>
 			<a href="http://english.xingwei.edu.cn/" target="_blank">Xing Wei College</a>
 		</p>
 	</div>
 	<div class="col-md-2">
-		<p class="text-center">
+		<p class="text-center resume">
 			MAY 2011 - 
 			<br>
 			JAN 2012
@@ -131,12 +131,12 @@
 </div>	
 <div class="row, panel panel-body">
 	<div class="col-md-3">
-		<p class="text-center">
+		<p class="text-center resume">
 			Education
 		</p>
 	</div>
 	<div class="col-md-7">
-		<p>
+		<p class="resume">
 			The University of Texas at San Antonio
 			<br>
 			<a href="http://colfa.utsa.edu/english/CW/" target='_blank'>Bachelor of Arts in English</a>
@@ -144,7 +144,7 @@
 		<hr>
 	</div>
 	<div class="col-md-2">
-		<p class="text-center">
+		<p class="text-center resume">
 			2007
 			<br>
 			2010
@@ -153,7 +153,7 @@
 	</div>
 	<div class="col-md-3"></div>
 	<div class="col-md-7">
-		<p>
+		<p class="resume">
 			Tongji University
 			<br>
 			<a href="http://www.tongji.edu.cn/english/" target="_blank">Chinese/Management/Economics</a>
@@ -161,7 +161,7 @@
 		<hr>
 	</div>
 	<div class="col-md-2">
-		<p class="text-center">
+		<p class="text-center resume">
 			2008
 			<br>
 			2008
@@ -170,14 +170,14 @@
 	</div>
 	<div class="col-md-3"></div>
 	<div class="col-md-7">
-		<p>
+		<p class="resume">
 			San Antonio College
 			<br>
 			<a href="http://www.alamo.edu/sac/" target="_blank">English/Communications</a>
 		</p>
 	</div>
 	<div class="col-md-2">
-		<p class="text-center">
+		<p class="text-center resume">
 			2004
 			<br>
 			2006

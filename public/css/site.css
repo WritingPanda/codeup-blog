@@ -1,5 +1,5 @@
 i {
-	font-size: 2em;
+	font-size: 2.3em;
 }
 
 .container-fluid {
@@ -11,4 +11,8 @@ footer {
 	margin: 10px;
 	clear:both;
 	padding:20px;
+}
+
+.resume {
+	font-size: 1.2em;
 }
