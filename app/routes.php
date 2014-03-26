@@ -17,14 +17,4 @@ Route::get('/resume', 'HomeController@showResume');
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
 
-// Route::get('/sayhello/{name}', function($name)
-// {
-// 	$data = array(
-// 		'name' => $name
-// 	);
-
-// 	return View::make('my-first-view')->with($data);
-// });
-
-Route::get('/roll-dice/{guess}', 'HomeController@showDice');
-
+Route::resource('posts', 'PostsController');

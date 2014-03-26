@@ -31,7 +31,7 @@
           Addressbook App
         </h2>
         <p>
-          The addressbook application gave me experience manipulating CSVs using PHP.
+          An addressbook application manipulating CSVs using PHP.
         </p>
         <p>
           <a class="btn btn-default" href="https://github.com/WritingPanda/codeup.dev/blob/master/public/php-addressbook.php" role="button">View details &raquo;</a>
@@ -42,7 +42,7 @@
           99 Bottles of Beer
         </h2>
         <p>
-          I wrote a command line application during a PHP challenge at the local PHP meet-up group.
+          A command line application written during a PHP challenge at a local PHP meet-up.
         </p>
         <p>
           <a class="btn btn-default" href="https://github.com/WritingPanda/phpchallenges/blob/master/beer.php" role="button">View details &raquo;</a>
@@ -53,7 +53,7 @@
           Morse Code Converter
         </h2>
         <p>
-          I built this morse code generator for the command line.
+          Morse code generator for the command line.
         </p>
         <p>
           <a class="btn btn-default" href="https://github.com/WritingPanda/phpchallenges/blob/master/morsecode.php" role="button">...- .. . .-- / -.. . - .- .. .-.. ... &raquo;</a>
@@ -74,5 +74,4 @@
   </div>
 </div>
 <hr>
-
 @stop

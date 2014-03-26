@@ -25,7 +25,7 @@
 		    	<ul class="nav navbar-nav">
 		    		<li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
 		        	<li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
-		        	<li><a href="#">Blog</a></li>
+		        	<li><a href="{{{-- action('HomeController@showBlog') --}}}">Blog</a></li>
 				</ul>
 		    </div>
 		</div>
@@ -40,7 +40,7 @@
 			</div>
 		</footer>
 	</div>
-	
+
     <script src="/js/jquery-1.11.0.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 
