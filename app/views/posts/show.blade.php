@@ -3,8 +3,9 @@
 @section('content')
 
 <div class="blog-header">
-	<h1 class="blog-title">Strong like Bamboo</h1>
+	<a href="{{{ action('PostsController@index') }}}"><h1 class="blog-title">Strong like Bamboo</h1></a>
 	<p class="lead blog-description">The blog written by a panda</p>
+	<p><a href="{{{ action('PostsController@create') }}}">Write a new post</a></p>
 </div>
 <hr>
 <div class="blog-post">
