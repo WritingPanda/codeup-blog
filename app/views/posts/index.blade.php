@@ -13,7 +13,7 @@
 		@foreach ($posts as $post)
 		<div class="blog-post">
 		    <a href="{{{ action('PostsController@show', $post->id) }}}"><h2 class="blog-post-title">{{{ $post->title }}}</h2></a>
-		    <p class="blog-post-meta">Written at {{{ $post->created_at }}} by a Panda</p>
+		    <p class="blog-post-meta">Written at {{{ $post->created_at }}} by a Panda | <a href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a></p>
 		    <p>{{{ $post->body }}}</p>
 		    <hr>
 		</div>
