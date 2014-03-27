@@ -9,7 +9,7 @@
 </div>
 <hr>
 <div class="row">
-	<div class="col-sm-8 blog-main">
+	<div class="blog-main">
 		@foreach ($posts as $post)
 		<div class="blog-post">
 		    <a href="{{{ action('PostsController@show', $post->id) }}}"><h2 class="blog-post-title">{{{$post->title}}}</h2></a>

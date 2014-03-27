@@ -9,12 +9,14 @@
 		<label for='title' class='control-label col-lg-2'>Title</label>
 		<div class='col-lg-8'>
     		<input class='form-control' type='text' id='title' name='title' autofocus='autofocus' value="{{{ Input::old('title') }}}">
+    		{{ $errors->has('title') ? $errors->first('title', "<span class='help-block'>:message</span>") : '' }}
     	</div>
 	</div>
 	<div class='form-group'>
 		<label for="body" class='col-lg-2 control-label'>Body</label>
 		<div class='col-sm-8'>
 			<textarea class='form-control' name='body' id='body' rows='4'>{{{ Input::old('body') }}}</textarea>
+			{{ $errors->has('body') ? $errors->first('body', "<span class='help-block'>:message</span>") : '' }}
 		</div>
 	</div>
 	<div class='form-group'>
