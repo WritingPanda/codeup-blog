@@ -25,7 +25,7 @@
 		    	<ul class="nav navbar-nav">
 		    		<li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
 		        	<li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
-		        	<li><a href="{{{-- action('HomeController@showBlog') --}}}">Blog</a></li>
+		        	<li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
 				</ul>
 		    </div>
 		</div>
@@ -35,7 +35,7 @@
 		<footer class="footer">
 			<div class="row clear-top">
 				<div class="col-lg-12">
-					<p>&copy; 2014 <a href="http://www.writtenbyapanda.com" target="_blank">Written by a Panda</a></p>
+					<p>&copy; 2014 <a href="http://www.writtenbyapanda.com" target="_blank">Written by a Panda</a> All rights and bamboo are reserved.</p>
 				</div>
 			</div>
 		</footer>
