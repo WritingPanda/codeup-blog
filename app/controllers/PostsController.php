@@ -80,7 +80,20 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$post = Post::findOrFail($id);
+		$validator = Validator::make(Input::all(), Post::$rules);
+
+		if ($validator->fails())
+		{
+			return Redirect::back()->withInput()->withErrors($validator);
+		}
+		else
+		{
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();
+			return Redirect::action('PostsController@index');
+		}
 	}
 
 	/**
