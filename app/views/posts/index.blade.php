@@ -13,8 +13,8 @@
 		@foreach ($posts as $post)
 		<div class="blog-post">
 		    <a href="{{{ action('PostsController@show', $post->id) }}}"><h2 class="blog-post-title">{{{ $post->title }}}</h2></a>
-		    <p class="blog-post-meta">Written by a Panda at {{{ $post->created_at->setTimeZone('America/Chicago')->format('l, F jS Y @ h:i A') }}} | <a href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a></p>
-		    <p>{{{ Str::words($post->body, 80) }}}</p>
+		    <p class="blog-post-meta">Written by a Panda at {{{ $post->created_at->setTimeZone('America/Chicago')->format('l, F jS Y @ h:i A') }}} <a class='btn btn-link' href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a>
+		    <p>{{{ Str::words($post->body, 50) }}}</p>
 		    <hr>
 		</div>
 		@endforeach

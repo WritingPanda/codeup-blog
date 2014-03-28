@@ -31,10 +31,30 @@
 			<p><button type="submit" class="btn btn-primary">Create Post</button>
 		@else
 			<p><button type="submit" class="btn btn-primary">Update Post</button>
+				<a class='btn btn-link' id='btnDeletePost' href="#">Delete Post</a>
 		@endif
 			<a type='button' class='btn btn-link' href="{{{ action('PostsController@index') }}}">Cancel</a></p>
 		</div>
 	</div>
-{{ Form::close() }}
+	{{ Form::close() }}
+	@if (!empty($post->id))
+		{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}
+		{{ Form::close() }}
+	@endif
 
+@stop
+
+@section('bottomscript')
+	@if (!empty($post->id))
+		<script>
+			
+			$('#btnDeletePost').on('click', function(e) {
+				e.preventDefault();
+				if(confirm('Delete post?')) {
+					$('#formDeletePost').submit();
+				};
+			});
+
+		</script>
+	@endif
 @stop
