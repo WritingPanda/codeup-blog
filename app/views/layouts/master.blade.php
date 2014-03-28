@@ -23,9 +23,9 @@
 		    </div>
 		    <div class="navbar-collapse collapse navbar-responsive-collapse">
 		    	<ul class="nav navbar-nav">
+		        	<li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
 		    		<li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
 		        	<li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
-		        	<li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
 				</ul>
 		    </div>
 		</div>
