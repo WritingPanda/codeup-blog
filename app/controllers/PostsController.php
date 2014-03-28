@@ -2,6 +2,15 @@
 
 class PostsController extends \BaseController {
 
+	public function __construct()
+	{
+		// Include parent constructor
+		parent::__construct();
+
+		// Run an auth filter before all methods except index and show
+		$this->beforeFilter('auth.basic', ['except' => ['index', 'show']]);
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
