@@ -10,9 +10,10 @@
 <hr>
 <div class="blog-post">
     <h2 class="blog-post-title">{{{ $post->title }}}</h2>
-    <p class="blog-post-meta">Written at {{{ $post->created_at }}} by a Panda</p>
+    <p class="blog-post-meta">Written by a Panda at {{{ $post->created_at->setTimeZone('America/Chicago')->format('l, F jS Y @ h:i A') }}}</p>
     <p>{{{ $post->body }}}</p>
     <hr>
+    <p><a type='button' class='btn btn-link' href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a> <a href="#" id='btnDeletePost' class='btn btn-link'>Delete</a> <a type='button' class='btn btn-link' href="{{{ action('PostsController@index') }}}">Go back</a></p>
 </div>
 {{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}
 {{ Form::close() }}
