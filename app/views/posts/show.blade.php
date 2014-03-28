@@ -3,9 +3,9 @@
 @section('content')
 
 <div class="blog-header">
-	<a href="{{{ action('PostsController@index') }}}"><h1 class="blog-title">Strong like Bamboo</h1></a>
+	<h1 class="blog-title">Strong like Bamboo</h1>
 	<p class="lead blog-description">The blog written by a panda</p>
-	<p><a href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a></p>
+	<p><a type='button' class='btn btn-link' href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a> <a href="#" id='btnDeletePost' class='btn btn-link'>Delete</a> <a type='button' class='btn btn-link' href="{{{ action('PostsController@index') }}}">Go back</a></p>
 </div>
 <hr>
 <div class="blog-post">
@@ -14,5 +14,23 @@
     <p>{{{ $post->body }}}</p>
     <hr>
 </div>
+{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}
+{{ Form::close() }}
+
+@stop
+
+@section('bottomscript')
+
+<script>
+	
+	$('#btnDeletePost').on('click', function(e) {
+		e.preventDefault();
+		if(confirm('Delete post?')) {
+			$('#formDeletePost').submit();
+		};
+	});
+
+</script>
+
 
 @stop

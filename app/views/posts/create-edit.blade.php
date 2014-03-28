@@ -26,12 +26,13 @@
 		</div>
 	</div>
 	<div class='form-group'>
-		<div class='col-lg-2 col-lg-offset-2'>
+		<div class='col-lg-4 col-lg-offset-2'>
 		@if (empty($post->id))
-			<button type="submit" class="btn btn-primary">Create Post</button>
+			<p><button type="submit" class="btn btn-primary">Create Post</button>
 		@else
-			<button type="submit" class="btn btn-primary">Update Post</button>
+			<p><button type="submit" class="btn btn-primary">Update Post</button>
 		@endif
+			<a type='button' class='btn btn-link' href="{{{ action('PostsController@index') }}}">Cancel</a></p>
 		</div>
 	</div>
 {{ Form::close() }}
