@@ -115,8 +115,17 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		Post::findOrFail($id)->delete();
-		Session::flash('successMessage', 'Bye bye post!');
+		$delete = Post::find($id);
+
+		if ($delete == null) 
+		{
+			Session::flash('errorMessage', 'Post did not delete because it does not exist.');
+		}
+		else
+		{
+			Post::find($id)->delete();
+			Session::flash('successMessage', 'Bye bye post!');
+		}
 		return Redirect::action('PostsController@index');
 	}
 
