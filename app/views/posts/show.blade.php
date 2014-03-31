@@ -10,7 +10,7 @@
 <hr>
 <div class="blog-post">
     <h2 class="blog-post-title">{{{ $post->title }}}</h2>
-    <p class="blog-post-meta">Written by a Panda at {{{ $post->created_at->setTimeZone('America/Chicago')->format('l, F jS Y @ h:i A') }}}</p>
+    <p class="blog-post-meta">Written by a Panda at {{{ $post->created_at->format('l, F jS Y @ h:i A') }}}</p>
     <p>{{{ $post->body }}}</p>
     <hr>
 </div>
