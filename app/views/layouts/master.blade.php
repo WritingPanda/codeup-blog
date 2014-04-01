@@ -25,8 +25,8 @@
 		    <form class="navbar-form navbar-right" role="search">
 				<div id="search-thing" class="form-group">
 					<input type="text" class="form-control" placeholder="Search">
+					<button type="submit" class="btn btn-link">Submit</button>
 				</div>
-				<button type="submit" class="btn btn-link">Submit</button>
 			</form>
 		    </div>
 		</div>
