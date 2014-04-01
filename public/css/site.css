@@ -16,3 +16,12 @@ footer {
 .resume {
 	font-size: 1.2em;
 }
+
+#search-thing {
+	padding-top: 8px;
+	padding-bottom: 0px;
+}
+
+div.navbar {
+	margin-bottom: 5px;
+}
