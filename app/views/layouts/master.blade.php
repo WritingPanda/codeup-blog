@@ -27,9 +27,6 @@
 		    		<li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
 		        	<li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
 				</ul>
-			    <form class="navbar-form navbar-right" id="search-thing">
-	      			<input type="text" class="form-control col-lg-8" placeholder="Search">
-				</form>
 		    </div>
 		</div>
 		@if (Session::has('successMessage'))
