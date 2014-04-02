@@ -3,8 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="/css/readable-bootstrap.min.css">
-	<link rel="stylesheet" href="/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/site.css">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
 	<title>Written by a Panda</title>
 
 	@yield('topscript')
@@ -33,10 +33,10 @@
 		    </div>
 		</div>
 		@if (Session::has('successMessage'))
-			<div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+			<div class="alert alert-dismissable alert-success">{{{ Session::get('successMessage') }}}</div>
 		@endif
 		@if (Session::has('errorMessage'))
-			<div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+			<div class="alert alert-dismissable alert-danger">{{{ Session::get('errorMessage') }}}</div>
 		@endif
 
 	    @yield('content')
