@@ -12,8 +12,13 @@
 </head>
 <body>
 	<div class="container">
-		<div class="navbar">
+		<div class="navbar navbar-default">
 		    <div class="navbar-header">
+		    	<button type="button" class="navbar-toggle collasped" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		    	</button>
 		    	<a class="navbar-brand" href="{{{ action('HomeController@showIndex') }}}">Written by a Panda</a>
 		    </div>
 		    <div class="navbar-collapse collapse navbar-responsive-collapse">
@@ -22,12 +27,9 @@
 		    		<li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
 		        	<li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
 				</ul>
-		    <form class="navbar-form navbar-right" role="search">
-				<div id="search-thing" class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
-					<button type="submit" class="btn btn-link">Submit</button>
-				</div>
-			</form>
+			    <form class="navbar-form navbar-right" id="search-thing">
+	      			<input type="text" class="form-control col-lg-8" placeholder="Search">
+				</form>
 		    </div>
 		</div>
 		@if (Session::has('successMessage'))
