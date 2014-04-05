@@ -18,6 +18,15 @@ class HomeController extends BaseController {
 	public function showIndex()
 	{
 		return View::make('index');
+		$search = Input::get('search');
+
+		// Added search
+		if(!is_null($search))
+		{
+			$posts = $query->where('title', 'LIKE', "%{$search}%")
+						   ->orWhere('body', 'LIKE', "%{$search}%")
+						   ->paginate(5);
+		}
 	}
 
 	public function showResume()
@@ -29,4 +38,5 @@ class HomeController extends BaseController {
 	{
 		return View::make('portfolio');
 	}
+
 }

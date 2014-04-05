@@ -26,6 +26,12 @@
 		        	<li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
 		    		<li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
 		        	<li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
+					<li>
+						{{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class' => '')) }}
+						{{ Form::submit('Search', array('class' => 'btn btn-link')) }}
+						{{ Form::text('search') }}
+						{{ Form::close() }}
+					</li>
 				</ul>
 		    </div>
 		</div>
