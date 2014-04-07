@@ -17,9 +17,8 @@ footer {
 	font-size: 1.2em;
 }
 
-#search-thing {
-	padding-top: 8px;
-	padding-bottom: 0px;
+#search {
+	margin-top: 12px;
 }
 
 div.navbar {
