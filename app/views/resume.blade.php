@@ -3,7 +3,9 @@
 @section('content')
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h2>Omar Quimbaya, Junior Web Developer</h2>
+		<h2>Omar Quimbaya
+		<br> 
+		Web Developer and Instructor @ Codeup and Cohost at Geek Out SA!</h2>
 	</div>
 	</div>
 <div class="row, panel panel-body">
@@ -32,15 +34,15 @@
 	</div>
 	<div class="col-md-7">
 		<p class="resume">
-			Lab Associate
+			Cohost
 			<br>
-			<a href="http://www.codeup.com" target="_blank">Codeup</a>
+			<a href="http://www.geekoutsa.com">Geek Out SA!</a>
 		</p>
 		<hr>
 	</div>
 	<div class="col-md-2">
 		<p class="text-center resume">
-			JAN 2014 -
+			MAY 2014 -
 			<br>
 			<span class="badge">PRESENT</span>
 		</p>
@@ -49,8 +51,42 @@
 	<div class="col-md-3"></div>
 	<div class="col-md-7">
 		<p class="resume">
+			Instructor and Web Developer
+			<br>
+			<a href="http://www.codeup.com">Codeup</a>
+		</p>
+		<hr>
+	</div>
+	<div class="col-md-2">
+		<p class="text-center resume">
+			MAY 2014 -
+			<br>
+			<span class="badge">PRESENT</span>
+		</p>
+		<hr>
+	</div>
+	<div class="col-md-3"></div>
+	<div class="col-md-7">
+		<p class="resume">
+			Lab Associate
+			<br>
+			<a href="http://www.codeup.com">Codeup</a>
+		</p>
+		<hr>
+	</div>
+	<div class="col-md-2">
+		<p class="text-center resume">
+			JAN 2014 -
+			<br>
+			MAY 2014
+		</p>
+		<hr>
+	</div>
+	<div class="col-md-3"></div>
+	<div class="col-md-7">
+		<p class="resume">
 			Social Media Consultant<br>
-			<a href="http://www.writtenbyapanda.com" target="_blank">Written by a Panda</a>
+			<a href="http://www.writtenbyapanda.com">Written by a Panda</a>
 		</p>
 		<hr>
 	</div>
@@ -67,7 +103,7 @@
 		<p class="resume">
 			Community Manager
 			<br>
-			<a href="http://www.geekdom.com" target="_blank">Geekdom</a>
+			<a href="http://www.geekdom.com">Geekdom</a>
 		</p>
 		<hr>
 	</div>
@@ -84,7 +120,7 @@
 		<p class="resume">
 			Director of PR and Social Media
 			<br>
-			<a href="http://www.parlevelsystems.com" target="_blank">ParLevel Systems</a>
+			<a href="http://www.parlevelsystems.com">ParLevel Systems</a>
 		</p>
 		<hr>
 	</div>
@@ -101,7 +137,7 @@
 		<p class="resume">
 			Specialist
 			<br>
-			<a href="http://www.apple.com/retail/northstar/" target="_blank">Apple</a>
+			<a href="http://www.apple.com/retail/northstar/">Apple</a>
 		</p>
 		<hr>
 	</div>
@@ -118,7 +154,7 @@
 		<p class="resume">
 			English Teacher/Foreign Consultant
 			<br>
-			<a href="http://english.xingwei.edu.cn/" target="_blank">Xing Wei College</a>
+			<a href="http://english.xingwei.edu.cn/">Xing Wei College</a>
 		</p>
 	</div>
 	<div class="col-md-2">
@@ -156,7 +192,7 @@
 		<p class="resume">
 			Tongji University
 			<br>
-			<a href="http://www.tongji.edu.cn/english/" target="_blank">Chinese/Management/Economics</a>
+			<a href="http://www.tongji.edu.cn/english/">Chinese/Management/Economics</a>
 		</p>
 		<hr>
 	</div>
@@ -173,7 +209,7 @@
 		<p class="resume">
 			San Antonio College
 			<br>
-			<a href="http://www.alamo.edu/sac/" target="_blank">English/Communications</a>
+			<a href="http://www.alamo.edu/sac/">English/Communications</a>
 		</p>
 	</div>
 	<div class="col-md-2">

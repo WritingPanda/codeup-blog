@@ -36,10 +36,10 @@
 		    </div>
 		</div>
 		@if (Session::has('successMessage'))
-			<div class="alert alert-dismissable alert-success">{{{ Session::get('successMessage') }}}</div>
+			<div class="alert alert-dismissable alert-success" id="fade_message">{{{ Session::get('successMessage') }}}</div>
 		@endif
 		@if (Session::has('errorMessage'))
-			<div class="alert alert-dismissable alert-danger">{{{ Session::get('errorMessage') }}}</div>
+			<div class="alert alert-dismissable alert-danger" id="fade_message">{{{ Session::get('errorMessage') }}}</div>
 		@endif
 
 	    @yield('content')
@@ -55,6 +55,9 @@
 
     <script src="/js/jquery-1.11.0.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script>
+		$('#fade_message').delay(2000).fadeOut(1000);
+    </script>
 
     @yield('bottomscript')
 
