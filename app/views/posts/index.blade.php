@@ -4,7 +4,6 @@
 
 <div class="blog-header">
 	<h1 class="blog-title">Written by a Panda</h1>
-	<p class="lead blog-description">The blog of Omar Quimbaya, Web Developer</p>
 	<a class='btn btn-link' href="{{{ action('PostsController@create') }}}">Write a new post</a>
 </div>
 <hr>

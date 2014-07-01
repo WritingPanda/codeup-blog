@@ -52,22 +52,7 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make(Input::all(), Post::$rules);
-
-		if ($validator->fails())
-		{
-			Session::flash('errorMessage', 'Post could not be created - see form errors');
-			return Redirect::back()->withInput()->withErrors($validator);
-		}
-		else
-		{
-			$post = new Post();
-			$post->title = Input::get('title');
-			$post->body = Input::get('body');
-			$post->save();
-			Session::flash('successMessage', 'Post created successfully!');
-			return Redirect::action('PostsController@index');
-		}
+		return $this->update(null);
 	}
 
 	/**
@@ -102,7 +87,12 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$post = Post::findOrFail($id);
+		$post = new Post();
+		
+		if($id !== null) {
+			$post = Post::findOrFail($id);
+		} 
+
 		$validator = Validator::make(Input::all(), Post::$rules);
 
 		if ($validator->fails())
@@ -115,7 +105,9 @@ class PostsController extends \BaseController {
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();
+
 			Session::flash('successMessage', 'Post updated successfully!');
+
 			return Redirect::action('PostsController@index');
 		}
 	}
