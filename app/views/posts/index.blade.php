@@ -12,7 +12,7 @@
 		@foreach ($posts as $post)
 		<div class="blog-post">
 		    <a class='btn btn-link' href="{{{ action('PostsController@show', $post->id) }}}"><h2 class="blog-post-title">{{{ $post->title }}}</h2></a>
-		    <p class="blog-post-meta">Written by a Panda on {{{ $post->updated_at->format('l, F jS Y @ h:i A') }}} <a class='btn btn-link' href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a>
+		    <p class="blog-post-meta">Edited by a Panda {{{ $post->updated_at->diffForHumans() }}}. <a class='btn btn-link' href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a>
 		    <p>{{{ Str::words($post->body, 50) }}}</p>
 		    <hr>
 		</div>
