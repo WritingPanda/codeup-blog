@@ -33,6 +33,16 @@
 						{{ Form::close() }}
 					</li>
 				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					@if (Auth::check())
+					 <!-- Show logout, user email, create post? -->
+					 <li>{{{ Auth::user()->email }}}</li>
+					 <li><a href="{{ action('HomeController@doLogout') }}">Logout</a></li>
+					@else
+					 <!-- Show login -->
+					 <li><a href="{{ action('HomeController@showLogin') }}">Login</a></li>
+					@endif
+				</ul>
 		    </div>
 		</div>
 		@if (Session::has('successMessage'))

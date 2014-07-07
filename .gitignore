@@ -4,5 +4,6 @@ composer.phar
 composer.lock
 .env.local.php
 .env.php
+/app/database/seeds/UserTableSeeder.php
 .DS_Store
 Thumbs.db

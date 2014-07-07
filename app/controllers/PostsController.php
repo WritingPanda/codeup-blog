@@ -8,7 +8,7 @@ class PostsController extends \BaseController {
 		parent::__construct();
 
 		// Run an auth filter before all methods except index and show
-		$this->beforeFilter('auth.basic', ['except' => ['index', 'show']]);
+		$this->beforeFilter('auth', ['except' => ['index', 'show']]);
 	}
 
 	/**
@@ -19,7 +19,7 @@ class PostsController extends \BaseController {
 	public function index()
 	{
 		$search = Input::get('search');
-		$query = Post::orderBy('created_at', 'desc');
+		$query = Post::with('user')->orderBy('created_at', 'desc');
 
 		// Added search
 		if(is_null($search))
@@ -88,8 +88,9 @@ class PostsController extends \BaseController {
 	public function update($id)
 	{
 		$post = new Post();
+		$post->user_id = Auth::user()->id;
 		
-		if($id !== null) {
+		if ($id !== null) {
 			$post = Post::findOrFail($id);
 		} 
 
@@ -107,7 +108,6 @@ class PostsController extends \BaseController {
 			$post->save();
 
 			Session::flash('successMessage', 'Post updated successfully!');
-
 			return Redirect::action('PostsController@index');
 		}
 	}
@@ -131,6 +131,7 @@ class PostsController extends \BaseController {
 			Post::find($id)->delete();
 			Session::flash('successMessage', 'Bye bye post!');
 		}
+		
 		return Redirect::action('PostsController@index');
 	}
 

@@ -36,6 +36,9 @@
 			<a type='button' class='btn btn-link' href="{{{ action('PostsController@index') }}}">Cancel</a></p>
 		</div>
 	</div>
+	<div class='form-group'>
+		{{ Form:: }}
+	</div>
 	{{ Form::close() }}
 	@if (!empty($post->id))
 		{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}

@@ -4,7 +4,9 @@
 
 <div class="blog-header">
 	<h1 class="blog-title">Written by a Panda</h1>
+	@if (Auth::check())
 	<a class='btn btn-link' href="{{{ action('PostsController@create') }}}">Write a new post</a>
+	@endif
 </div>
 <hr>
 <div class="row">
