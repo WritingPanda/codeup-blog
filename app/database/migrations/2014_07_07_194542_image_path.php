@@ -14,7 +14,7 @@ class ImagePath extends Migration {
 	{
 		Schema::table('posts', function(Blueprint $table)
 		{
-			$table->string('img_path', 200);
+			$table->string('img_path', 200)->nullable();
 		});
 	}
 

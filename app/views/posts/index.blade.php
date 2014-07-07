@@ -8,6 +8,7 @@
 	<a class='btn btn-link' href="{{{ action('PostsController@create') }}}">Write a new post</a>
 	@endif
 </div>
+{{ $posts->appends(array('search' => Input::get('search')))->links() }}
 <hr>
 <div class="row">
 	<div class="blog-main">

@@ -11,6 +11,9 @@
 <div class="blog-post">
     <h2 class="blog-post-title">{{{ $post->title }}}</h2>
     <p class="blog-post-meta">Written by a Panda on {{{ $post->updated_at->format('l, F jS Y @ h:i A') }}}</p>
+    @if ($post->img_path)
+    <img class="img-responsive" src="{{{ $post->img_path }}}">
+    @endif
     <p>{{{ $post->body }}}</p>
     <hr>
 </div>

@@ -105,12 +105,18 @@ class PostsController extends \BaseController {
 		{
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+			if (Input::hasFile('image') && Input::file('image')->isValid()) 
+			{
+				$post->addUploadedImage(Input::file('image'));
+			}
 			$post->save();
 
 			Session::flash('successMessage', 'Post updated successfully!');
 			return Redirect::action('PostsController@index');
 		}
 	}
+
+
 
 	/**
 	 * Remove the specified resource from storage.

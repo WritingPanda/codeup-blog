@@ -5,11 +5,11 @@
 @if (empty($post->id))
 	<h1 class='blog-title'>Create a new post</h1>
 	<hr>
-	{{ Form::open(array('action' => 'PostsController@store', 'class' => 'form-horizontal')) }}
+	{{ Form::open(array('action' => 'PostsController@store', 'class' => 'form-horizontal', 'files' => true)) }}
 @else
 	<h1 class='blog-title'>Edit post</h1>
 	<hr>
-	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'put', 'class' => 'form-horizontal')) }}
+	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'put', 'class' => 'form-horizontal', 'files' => true)) }}
 @endif
 	<div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
 		{{ Form::label('title', 'Title', array('class' => 'control-label col-lg-2')) }}
@@ -36,8 +36,9 @@
 			<a type='button' class='btn btn-link' href="{{{ action('PostsController@index') }}}">Cancel</a></p>
 		</div>
 	</div>
-	<div class='form-group'>
-		{{ Form:: }}
+	<div class="form-group">
+		{{ Form::file('image') }}
+		<p class="help-block">Upload an image. Images cannot be more than 500x500 pixels.</p>
 	</div>
 	{{ Form::close() }}
 	@if (!empty($post->id))
