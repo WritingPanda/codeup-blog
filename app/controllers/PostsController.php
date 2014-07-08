@@ -103,6 +103,7 @@ class PostsController extends \BaseController {
 		}
 		else
 		{
+			
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			if (Input::hasFile('image') && Input::file('image')->isValid()) 
@@ -115,9 +116,7 @@ class PostsController extends \BaseController {
 			return Redirect::action('PostsController@index');
 		}
 	}
-
-
-
+	
 	/**
 	 * Remove the specified resource from storage.
 	 *

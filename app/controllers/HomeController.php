@@ -43,12 +43,12 @@ class HomeController extends BaseController {
 		if (Auth::attempt(array('email' => $email, 'password' => $password))) 
 		{
 			Session::flash('successMessage', 'Logged in! Start blogging!');
-			return Redirect::action('PostsController@index');
+			return Redirect::intended(action('PostsController@index'));
 		}
 		else
 		{
 			Session::flash('errorMessage', 'Email or password not found.');
-			return Redirect::action('HomeController@showLogin')->withInput();
+			return Redirect::action('HomeController@showLogin');
 		}
 	}
 

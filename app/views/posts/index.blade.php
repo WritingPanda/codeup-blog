@@ -15,8 +15,8 @@
 		@foreach ($posts as $post)
 		<div class="blog-post">
 		    <a class='btn btn-link' href="{{{ action('PostsController@show', $post->id) }}}"><h2 class="blog-post-title">{{{ $post->title }}}</h2></a>
-		    <p class="blog-post-meta">Edited by a Panda {{{ $post->updated_at->diffForHumans() }}}. <a class='btn btn-link' href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a>
-		    <p>{{{ Str::words($post->body, 50) }}}</p>
+		    <p class="blog-post-meta">Edited by a Panda {{{ $post->updated_at->diffForHumans() }}}. @if(Auth::check())<a class='btn btn-link' href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a>@endif
+		    <p>{{ Str::words($post->renderBody(), 100) }} <a href="{{{ action('PostsController@show', $post->id) }}}"><br>(Read more)</a></p>
 		    <hr>
 		</div>
 		@endforeach
