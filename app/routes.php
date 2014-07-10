@@ -25,3 +25,6 @@ Route::get('/portfolio', 'HomeController@showPortfolio');
 
 // Blog Posts
 Route::resource('posts', 'PostsController');
+
+// Email
+Route::post('sendmail', 'HomeController@send');

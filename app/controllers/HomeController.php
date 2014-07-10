@@ -58,4 +58,11 @@ class HomeController extends BaseController {
 		return Redirect::action('PostsController@index');
 	}
 
+	public function send()
+	{
+		$data = [
+			
+		];
+	}
+
 }

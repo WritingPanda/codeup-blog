@@ -8,6 +8,10 @@
 		"erusev/parsedown": "1.0.*",
 		"ezyang/htmlpurifier": "4.6.*"
 	},
+	"require-dev": {
+    "way/generators": "2.*",
+    "barryvdh/laravel-debugbar": "1.*"
+	},
 	"autoload": {
 		"classmap": [
 			"app/commands",

@@ -35,9 +35,14 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::check())
-					 <!-- Show logout, user email, create post? -->
-					 <li>{{{ Auth::user()->email }}}</li>
-					 <li><a href="{{ action('HomeController@doLogout') }}">Logout</a></li>
+					<!-- Show logout, user email, create post -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{{ Auth::user()->email }}}<b class="caret"></b></a>	
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="{{ action('PostsController@create') }}">Create Post</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="{{ action('HomeController@doLogout') }}">Logout</a></li>
+						</ul>
+					 </li>
 					@else
 					 <!-- Show login -->
 					 <li><a href="{{ action('HomeController@showLogin') }}">Login</a></li>
