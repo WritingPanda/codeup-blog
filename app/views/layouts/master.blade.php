@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Omar Quimbaya, Written by a Panda, website, social media, web development, content writing, copy editing, marketing">
+	<meta name="keywords" content="PHP, development, HTML, CSS, web development, jQuery, JavaScript, social media, writing, editing, Texas, China, Chinese, Spanish">
+	@yield('top-css')
 	<link rel="stylesheet" type="text/css" href="/css/readable-bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/site.css">
-	<title>Written by a Panda</title>
+	@yield('bottom-css')
+
+	<title>
+		@yield('title')
+	</title>
+
+	<script src="/js/jquery.min.js"></script>
 
 	@yield('topscript')
 
@@ -56,19 +65,20 @@
 		@if (Session::has('errorMessage'))
 			<div class="alert alert-dismissable alert-danger" id="fade_message">{{{ Session::get('errorMessage') }}}</div>
 		@endif
+	</div>
 
-	    @yield('content')
+	@yield('content')
 
+	<div class="container">
 		<footer class="footer">
 			<div class="row clear-top">
 				<div class="col-lg-12">
-					<p>&copy; 2014 <a href="http://www.writtenbyapanda.com" target="_blank">Written by a Panda</a> All rights and bamboo are reserved.</p>
+					<p>&copy; 2014 <a href="http://www.omarquimbaya.com" target="_blank">Omar Quimbaya / Written By a Panda</a> All rights and bamboo are reserved.</p>
 				</div>
 			</div>
 		</footer>
 	</div>
 
-    <script src="/js/jquery-1.11.0.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
 		$('#fade_message').delay(2000).fadeOut(1000);

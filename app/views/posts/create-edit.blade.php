@@ -1,16 +1,24 @@
 @extends('layouts.master')
 
+@section('title')
+
+Create a post
+
+@stop
+
 @section('content')
 
-@if (empty($post->id))
-	<h1 class='blog-title'>Create a new post</h1>
-	<hr>
-	{{ Form::open(array('action' => 'PostsController@store', 'class' => 'form-horizontal', 'files' => true)) }}
-@else
-	<h1 class='blog-title'>Edit post</h1>
-	<hr>
-	{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'put', 'class' => 'form-horizontal', 'files' => true)) }}
-@endif
+<div class="container">
+
+	@if (empty($post->id))
+		<h1 class='blog-title'>Create a new post</h1>
+		<hr>
+		{{ Form::open(array('action' => 'PostsController@store', 'class' => 'form-horizontal', 'files' => true)) }}
+	@else
+		<h1 class='blog-title'>Edit post</h1>
+		<hr>
+		{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'put', 'class' => 'form-horizontal', 'files' => true)) }}
+	@endif
 	<div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
 		{{ Form::label('title', 'Title', array('class' => 'control-label col-lg-2')) }}
 		<div class='col-lg-8'>
@@ -45,7 +53,7 @@
 		{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}
 		{{ Form::close() }}
 	@endif
-
+</div>
 @stop
 
 @section('bottomscript')
