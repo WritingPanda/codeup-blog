@@ -10,4 +10,7 @@ return array(
 	'EMAIL_USER' => '',
 	'EMAIL_PASS' => '',
 
+	'MAILGUN_DOMAIN' => '',
+	'MAILGUN_KEY' => ''
+
 );

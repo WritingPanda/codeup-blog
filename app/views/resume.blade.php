@@ -11,10 +11,9 @@ Panda Resume
 <div class="container">
 
 	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h2>Omar Quimbaya
-			<br> 
-			Web Developer and Instructor @ Codeup and Cohost at Geek Out SA!</h2>
+		<div class="panel-heading text-center">
+			<h2>Omar Leonardo Quimbaya</h2>
+			<h3>Software Developer at Def-Logix and Cohost at Geek Out SA!</h3>
 		</div>
 		</div>
 	<div class="row, panel panel-body">
@@ -38,9 +37,26 @@ Panda Resume
 	<div class="row, panel panel-body">
 		<div class="col-md-3">
 			<p class="text-center resume">
-				Work Experience
+					Work Experience
 			</p>
 		</div>
+		<div class="col-md-7">
+			<p class="resume">
+				Software Developer
+				<br>
+				<a href="http://www.def-logix.com">Def-Logix</a>
+			</p>
+			<hr>
+		</div>
+		<div class="col-md-2">
+			<p class="text-center resume">
+				AUGUST 2014
+				<br>
+				<span class="badge">PRESENT</span>
+			</p>
+			<hr>
+		</div>
+		<div class="col-md-3"></div>
 		<div class="col-md-7">
 			<p class="resume">
 				Cohost
@@ -51,7 +67,7 @@ Panda Resume
 		</div>
 		<div class="col-md-2">
 			<p class="text-center resume">
-				MAY 2014 -
+				MAY 2014
 				<br>
 				<span class="badge">PRESENT</span>
 			</p>
@@ -68,9 +84,9 @@ Panda Resume
 		</div>
 		<div class="col-md-2">
 			<p class="text-center resume">
-				MAY 2014 -
+				MAY 2014
 				<br>
-				<span class="badge">PRESENT</span>
+				JULY 2014
 			</p>
 			<hr>
 		</div>
@@ -85,7 +101,7 @@ Panda Resume
 		</div>
 		<div class="col-md-2">
 			<p class="text-center resume">
-				JAN 2014 -
+				JAN 2014
 				<br>
 				MAY 2014
 			</p>
@@ -101,7 +117,7 @@ Panda Resume
 		</div>
 		<div class="col-md-2">
 			<p class="text-center resume">
-				NOV 2013 -
+				NOV 2013
 				<br>
 				JAN 2014
 			</p>
@@ -118,7 +134,7 @@ Panda Resume
 		</div>
 		<div class="col-md-2">
 			<p class="text-center resume">
-				SEPT 2013 -
+				SEPT 2013
 				<br>
 				NOV 2013
 			</p>
@@ -135,7 +151,7 @@ Panda Resume
 		</div>
 		<div class="col-md-2">
 			<p class="text-center resume">
-				MAR 2013 -
+				MAR 2013
 				<br>
 				SEPT 2013
 			</p>
@@ -152,7 +168,7 @@ Panda Resume
 		</div>
 		<div class="col-md-2">
 			<p class="text-center resume">
-				MAY 2012 - 
+				MAY 2012 
 				<br>
 				JAN 2013
 			</p>
@@ -168,7 +184,7 @@ Panda Resume
 		</div>
 		<div class="col-md-2">
 			<p class="text-center resume">
-				MAY 2011 - 
+				MAY 2011 
 				<br>
 				JAN 2012
 			</p>				

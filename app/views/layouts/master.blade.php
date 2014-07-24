@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="description" content="Omar Quimbaya, Written by a Panda, website, social media, web development, content writing, copy editing, marketing">
+	<meta name="description" content="The website of Omar Quimbaya, software developer, web developer, teacher, content creator, and more. Please check out my blog if you want to learn more about the things I am up to, but if you are interested in hiring me for your company or side project, please check out my resume! Thank you!">
 	<meta name="keywords" content="PHP, development, HTML, CSS, web development, jQuery, JavaScript, social media, writing, editing, Texas, China, Chinese, Spanish">
+
 	@yield('top-css')
+
 	<link rel="stylesheet" type="text/css" href="/css/readable-bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/site.css">
+
 	@yield('bottom-css')
 
 	<title>
