@@ -1,3 +1,6 @@
+@import url("//fonts.googleapis.com/css?family=Raleway:400,700");
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+
 i {
 	font-size: 2.3em;
 }
@@ -6,11 +9,17 @@ i {
 	width: 75%;
 }
 
-footer {
-	position: relative;
-	margin: 10px;
-	clear:both;
-	padding:20px;
+pre {
+	background-color: #FFFFFF;
+	border: none;
+}
+
+code {
+	font-family: "Oxygen Mono", "monospace";
+}
+
+.panel-footer {
+	font-family: "Raleway";
 }
 
 .resume {

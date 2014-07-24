@@ -11,6 +11,10 @@ Written by a Panda
 
 	<div class="blog-header">
 		<h1 class="blog-title">Written by a Panda</h1>
+		{{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'id' => 'search')) }}
+			{{ Form::submit('Search', array('class' => 'btn btn-link')) }}
+			{{ Form::text('search') }}
+		{{ Form::close() }}
 	</div>
 	<hr>
 	<div class="row">

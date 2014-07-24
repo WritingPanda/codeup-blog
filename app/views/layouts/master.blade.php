@@ -6,8 +6,8 @@
 	<meta name="keywords" content="PHP, development, HTML, CSS, web development, jQuery, JavaScript, social media, writing, editing, Texas, China, Chinese, Spanish">
 
 	@yield('top-css')
-
-	<link rel="stylesheet" type="text/css" href="/css/readable-bootstrap.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/readable-bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/site.css">
 
@@ -23,7 +23,7 @@
 
 </head>
 <body>
-	<div class="container">
+	<div class="container" id="top">
 		<div class="navbar navbar-default">
 		    <div class="navbar-header">
 		    	<button type="button" class="navbar-toggle collasped" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -38,12 +38,6 @@
 		        	<li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
 		    		<li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
 		        	<li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
-					<li>
-						{{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'id' => 'search')) }}
-							{{ Form::submit('Search', array('class' => 'btn btn-link')) }}
-							{{ Form::text('search') }}
-						{{ Form::close() }}
-					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::check())
@@ -73,7 +67,7 @@
 	@yield('content')
 
 	<div class="container">
-		<footer class="footer">
+		<footer class="panel-footer">
 			<div class="row clear-top">
 				<div class="col-lg-12">
 					<p>&copy; 2014 <a href="http://www.omarquimbaya.com" target="_blank">Omar Quimbaya / Written By a Panda</a> All rights and bamboo are reserved.</p>
@@ -82,7 +76,7 @@
 		</footer>
 	</div>
 
-    <script src="/js/bootstrap.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script>
 		$('#fade_message').delay(2000).fadeOut(1000);
     </script>
