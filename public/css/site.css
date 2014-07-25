@@ -14,8 +14,39 @@ pre {
 	border: none;
 }
 
-code {
+pre code {
 	font-family: "Oxygen Mono", "monospace";
+	white-space: pre;
+}
+
+#pandaDiv {
+	background-color: rgb(56, 78, 97);
+}
+
+@media (max-width: 1020px) {
+	#pandaASCII {
+		display: none;
+	}
+
+	#pandaPicture {
+		display: inline-block;
+		position: relative;
+		left: 148px;
+		margin: 20px;
+	}
+}
+
+@media (max-width: 683px) {
+	#pandaPicture {
+		left: 0px;
+		margin: 0px;
+	}
+}
+
+@media (min-width: 1020px) {
+	#pandaPicture {
+		display: none;
+	}
 }
 
 .panel-footer {
@@ -24,10 +55,6 @@ code {
 
 .resume {
 	font-size: 1.2em;
-}
-
-#search {
-	margin-top: 12px;
 }
 
 div.navbar {

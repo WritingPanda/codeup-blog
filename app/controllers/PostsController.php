@@ -32,7 +32,8 @@ class PostsController extends \BaseController {
 						   ->orWhere('body', 'LIKE', "%{$search}%")
 						   ->paginate(5);
 		}
-		return View::make('posts.index')->with('posts', $posts);
+		
+		return View::make('posts.index')->with('posts', $posts)->with('search', $search);
 	}
 
 	/**

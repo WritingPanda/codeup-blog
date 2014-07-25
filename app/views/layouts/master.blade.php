@@ -38,8 +38,8 @@
 		        	<li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
 		        	<li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
 		        	<li>
-		        		{{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class' => 'navbar-form navbar-left')) }}
-							{{ Form::text('search', null, array('class' => 'form-control col-lg-8', 'placeholder' => 'Search')) }}
+		        		{{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class' => 'navbar-form navbar-left', 'id' => 'search')) }}
+							{{ Form::text('search', null, array('class' => 'form-control col-lg-8', 'placeholder' => 'Search', 'id' => 'searchForm')) }}
 						{{ Form::close() }}
 		        	</li>
 				</ul>
@@ -82,7 +82,20 @@
 
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script>
+
+    	var searchInput;
+
 		$('#fade_message').delay(2000).fadeOut(1000);
+
+		// $('#searchForm').keypress(function(e) {
+		// 	if (e.which === 13) {
+		// 		e.preventDefault();
+		// 		searchInput = $('#searchForm').val();
+		// 		searchInput = $(searchInput)[0].textContent;
+		// 		$('#search').submit();
+		// 	};
+		// });
+
     </script>
 
     @yield('bottomscript')
