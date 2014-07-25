@@ -23,7 +23,7 @@
 
 </head>
 <body>
-	<div class="container" id="top">
+	<div id="top">
 		<div class="navbar navbar-default">
 		    <div class="navbar-header">
 		    	<button type="button" class="navbar-toggle collasped" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -36,8 +36,12 @@
 		    <div class="navbar-collapse collapse navbar-responsive-collapse">
 		    	<ul class="nav navbar-nav">
 		        	<li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
-		    		<li><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
 		        	<li><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
+		        	<li>
+		        		{{ Form::open(array('action' => array('PostsController@index'), 'method' => 'GET', 'class' => 'navbar-form navbar-left')) }}
+							{{ Form::text('search', null, array('class' => 'form-control col-lg-8', 'placeholder' => 'Search')) }}
+						{{ Form::close() }}
+		        	</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::check())
@@ -66,7 +70,7 @@
 
 	@yield('content')
 
-	<div class="container">
+	<div id="bottom">
 		<footer class="panel-footer">
 			<div class="row clear-top">
 				<div class="col-lg-12">

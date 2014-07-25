@@ -21,7 +21,7 @@ Route::get('/logout', 'HomeController@doLogout');
 
 // Resume and Portfolio
 Route::get('/resume', 'HomeController@showResume');
-Route::get('/portfolio', 'HomeController@showPortfolio');
+// Route::get('/portfolio', 'HomeController@showPortfolio');
 
 // Blog Posts
 Route::resource('posts', 'PostsController');
