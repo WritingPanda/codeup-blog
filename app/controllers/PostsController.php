@@ -22,7 +22,7 @@ class PostsController extends \BaseController {
 		$query = Post::with('user')->orderBy('created_at', 'desc');
 
 		// Added search
-		if(is_null($search))
+		if (is_null($search))
 		{
 			$posts = $query->paginate(5);
 		}
