@@ -2,7 +2,7 @@
 
 @section('title')
 
-Panda Resume
+Omar Quimbaya's Resume
 
 @stop
 

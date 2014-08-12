@@ -18,7 +18,8 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$search = Input::get('search');
+		$search = htmlspecialchars(strip_tags(Input::get('search')));
+
 		$query = Post::with('user')->orderBy('created_at', 'desc');
 
 		// Added search

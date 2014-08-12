@@ -4,6 +4,26 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="The website of Omar Quimbaya, software developer, web developer, teacher, content creator, and more. Please check out my blog if you want to learn more about the things I am up to, but if you are interested in hiring me for your company or side project, please check out my resume! Thank you!">
 	<meta name="keywords" content="PHP, development, HTML, CSS, web development, jQuery, JavaScript, social media, writing, editing, Texas, China, Chinese, Spanish">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="/img/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="/img/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 	@yield('top-css')
 	
@@ -24,7 +44,7 @@
 </head>
 <body>
 	<div id="top">
-		<div class="navbar navbar-default">
+		<div class="navbar navbar-default navbar-fixed-top">
 		    <div class="navbar-header">
 		    	<button type="button" class="navbar-toggle collasped" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 			        <span class="icon-bar"></span>
@@ -83,18 +103,7 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script>
 
-    	var searchInput;
-
 		$('#fade_message').delay(2000).fadeOut(1000);
-
-		// $('#searchForm').keypress(function(e) {
-		// 	if (e.which === 13) {
-		// 		e.preventDefault();
-		// 		searchInput = $('#searchForm').val();
-		// 		searchInput = $(searchInput)[0].textContent;
-		// 		$('#search').submit();
-		// 	};
-		// });
 
     </script>
 

@@ -16,7 +16,7 @@
 		@if (Auth::check())
 		<p>
 			<a type='button' class='btn btn-link' href="{{{ action('PostsController@edit', $post->id) }}}">Edit post</a> <a href="#" id='btnDeletePost' class='btn btn-link'>Delete</a> 
-			@endif 
+		@endif 
 			<a type='button' class='btn btn-link' href="{{{ action('PostsController@index') }}}">Go back</a>
 		</p>
 	</div>

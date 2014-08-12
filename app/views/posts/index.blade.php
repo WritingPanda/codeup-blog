@@ -15,7 +15,7 @@ A Blog Written by a Panda
 
 <div class="container">
 	@if ($posts->isEmpty())
-		<h2 class="text-center">Sorry! No results from your search. Try something different or <a href="{{{ action('PostsController@index') }}}">go back</a>.</h2>
+		<h2 class="text-center">Sorry! No results from your search of {{{ $search }}}. Try something different or <a href="{{{ action('PostsController@index') }}}">go back</a>.</h2>
 	@elseif (isset($_GET['search']))
 		<a class='btn btn-link' href="{{{ action('PostsController@index') }}}">Go back</a>
 	@endif
